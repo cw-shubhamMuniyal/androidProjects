@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Create Account"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        style = "@style/heading"/>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:text="UserName:"
+        android:textColor="#000000"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:textSize="20sp" />
+
+
+    <EditText
+        android:id="@+id/edt_userName"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="100dp"
+        android:layout_toRightOf="@+id/userName"
+
+        android:hint="Enter User Name" />
+
+    <TextView
+
+        android:id="@+id/Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userName"
+        android:layout_marginTop="42dp"
+        android:text="Age:"
+        android:textColor="#000000"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_Age"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_toRightOf="@+id/Age"
+        android:layout_below="@+id/edt_userName"
+        android:layout_marginTop="35dp"
+        android:hint="Enter Age"
+        android:layout_marginLeft="100dp"
+        />
+
+    <TextView
+
+        android:id="@+id/bloodGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Age"
+        android:layout_marginTop="42dp"
+        android:text="Blood Group:"
+        android:textColor="#000000"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_bloodGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edt_Age"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/bloodGroup"
+        android:hint="Enter Blood Group" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bloodGroup"
+        android:layout_marginTop="42dp"
+        android:text="Password:"
+        android:textColor="#000000"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="6dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edt_bloodGroup"
+        android:layout_marginLeft="38dp"
+        android:layout_marginTop="35dp"
+        android:layout_toRightOf="@+id/password"
+        android:hint="Enter password" />
+
+    <TextView
+        android:id="@+id/alreadyLogin"
+        style="@style/link"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/password"
+        android:gravity="center"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="already a User" />
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:text="submit"
+        android:textStyle="bold"
+        style = "@style/buttons"/>
+
+    </RelativeLayout>

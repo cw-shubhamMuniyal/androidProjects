@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="0dp"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:text="Login page"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="138dp"
+            tools:layout_editor_absoluteY="16dp"
+            style = "@style/heading"
+            />
+
+
+    <LinearLayout
+        android:id="@+id/usernameLinearL"
+        android:layout_width="229dp"
+        android:layout_height="46dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="140dp">
+
+        <TextView
+            android:id="@+id/usernameTextV"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="0.25"
+            android:textSize="17sp"
+            android:text="Username:"
+
+            />
+
+        <EditText
+            android:id="@+id/usernameEditT"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+
+            />
+        <!-- change background if not shown in screen -->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/pwdLinearL"
+        android:layout_width="234dp"
+        android:layout_height="51dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="193dp">
+
+        <TextView
+            android:id="@+id/pwdTextV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:text="password" />
+
+        <EditText
+            android:id="@+id/pwdEditV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.35"
+            android:inputType="textPassword"
+            />
+        <!-- change background if not shown in screen -->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitBut"
+        android:layout_width="87dp"
+        android:layout_height="34dp"
+        android:text="submit"
+        android:textAllCaps="false"
+        tools:layout_editor_absoluteX="149dp"
+        tools:layout_editor_absoluteY="281dp"
+        tools:textAllCaps="true"
+        android:layout_gravity="center"
+        style = "@style/buttons"
+        />
+
+</LinearLayout>

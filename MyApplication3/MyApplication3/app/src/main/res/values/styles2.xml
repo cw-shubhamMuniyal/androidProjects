@@ -1,0 +1,6 @@
+
+<resources>
+    <style name = "myCustomButton" parent = "android:Widget.Button">
+        <item name="android:background">@drawable/my_nine_patch</item>
+    </style>
+</resources>
