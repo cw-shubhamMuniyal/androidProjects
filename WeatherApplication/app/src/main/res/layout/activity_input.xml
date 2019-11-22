@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/downloaded_gradient"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:padding="38dp">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_height="50dp"
+                android:layout_width="50dp"
+                android:src="@drawable/citylabel"
+                >
+            </ImageView>
+
+            <Space
+                android:layout_width="20sp"
+                android:layout_height="20sp" />
+
+            <EditText
+                android:id="@+id/cityId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="40sp"
+                android:hint="City name"
+                android:background="#ffffff"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="20sp"
+            android:layout_height="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/submitCityId"
+                android:layout_height="wrap_content"
+                android:layout_width = "wrap_content"
+                android:text="@string/submitButtonStr"
+                android:textSize="40sp"
+                android:textColor="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -6,4 +6,5 @@
     <string name="sunsetStr">Sunset</string>
     <string name="humidityStr">Humidity</string>
     <string name="windStr">Wind</string>
+    <string name="submitButtonStr">Submit</string>
 </resources>
